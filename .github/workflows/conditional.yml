@@ -8,7 +8,7 @@ on:
 
 jobs:
   production-deploy:
-    if: startsWith(github. ref,'refs/heads/feature/') || gihtub.ref == 'refs/heads/main'
+    if: startsWith(github.ref,'refs/heads/feature/') || gihtub.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
